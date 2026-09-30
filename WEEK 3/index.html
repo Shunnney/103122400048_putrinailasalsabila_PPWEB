@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Saya</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER & NAVBAR
+    ========================== -->
+    <header class="header">
+
+        <div class="logo">
+            My<span>Profile</span>
+        </div>
+
+        <!-- Navbar menggunakan Flexbox -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         LAYOUT UTAMA
+    ========================== -->
+
+    <div class="layout">
+
+        <!-- =====================
+             SIDEBAR
+        ====================== -->
+        <aside class="sidebar">
+
+            <div class="sidebar-profile">
+                <div class="avatar">
+                    <img src="https://i.pinimg.com/736x/18/2a/61/182a614e0beccdf4b59ac5295b71fad5.jpg" alt="Foto Profil">
+                </div>
+
+                <h3>Finn Campbell</h3>
+                <p>Student & Web Learner</p>
+            </div>
+
+
+            <ul class="sidebar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </aside>
+
+
+        <!-- =====================
+             KONTEN UTAMA
+        ====================== -->
+        <main class="content" id="home">
+
+            <!-- HERO -->
+            <section class="hero">
+
+                <div class="hero-text">
+
+                    <p class="small-title">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Finn <span>Campbell</span>
+                    </h1>
+
+                    <p>
+                        Seorang mahasiswa yang sedang mempelajari
+                        HTML dan CSS serta tertarik dengan dunia
+                        pengembangan website.
+                    </p>
+
+                    <a href="#profile" class="button">
+                        Lihat Profil
+                    </a>
+
+                </div>
+
+                <div class="hero-avatar">
+                     <img src="https://i.pinimg.com/736x/18/2a/61/182a614e0beccdf4b59ac5295b71fad5.jpg" alt="Foto Profil">
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 SOAL 1 - PROFIL
+            ====================== -->
+            <section class="profile-section" id="profile">
+
+                <div class="section-title">
+                    <p>SOAL 1</p>
+                    <h2>Profil Saya</h2>
+                </div>
+
+
+                <div class="profile-card">
+
+                    <div class="profile-image">
+                        <img src="https://i.pinimg.com/736x/18/2a/61/182a614e0beccdf4b59ac5295b71fad5.jpg" alt="Foto Profil">
+                    </div>
+
+
+                    <div class="profile-description">
+
+                        <h3>Finn Campbell</h3>
+
+                        <p>
+                            Saya adalah seorang mahasiswa yang sedang
+                            belajar membuat website menggunakan HTML
+                            dan CSS. Saya senang mempelajari teknologi
+                            baru dan mengembangkan kemampuan di bidang
+                            pemrograman.
+                        </p>
+
+                        <!-- List -->
+                        <ul class="profile-list">
+
+                            <li>
+                                <strong>Nama:</strong>
+                                Finn Campbell
+                            </li>
+
+                            <li>
+                                <strong>Jurusan:</strong>
+                                Teknik Informatika
+                            </li>
+
+                            <li>
+                                <strong>Hobi:</strong>
+                                Coding, Gaming, dan Membaca
+                            </li>
+
+                            <li>
+                                <strong>Kota:</strong>
+                                Candy Kingdom
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 ABOUT
+            ====================== -->
+            <section class="about-section" id="about">
+
+                <div class="section-title">
+                    <p>ABOUT</p>
+                    <h2>Yang Saya Pelajari</h2>
+                </div>
+
+
+                <!-- CSS Grid -->
+                <div class="card-grid">
+
+                    <div class="skill-card">
+
+                        <div class="icon">
+                            HTML
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Digunakan untuk membuat struktur
+                            dan elemen pada sebuah halaman website.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="icon">
+                            CSS
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Digunakan untuk mengatur warna,
+                            ukuran, posisi, dan tampilan website.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="icon">
+                            WEB
+                        </div>
+
+                        <h3>Responsive</h3>
+
+                        <p>
+                            Membuat website dapat menyesuaikan
+                            tampilan pada berbagai ukuran layar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 CONTACT
+            ====================== -->
+            <section class="contact-section" id="contact">
+
+                <div class="section-title">
+                    <p>CONTACT</p>
+                    <h2>Hubungi Saya</h2>
+                </div>
+
+                <div class="contact-box">
+
+                    <p>
+                        Email:
+                        <span>finn@campbell.com</span>
+                    </p>
+
+                    <p>
+                        Telepon:
+                        <span>0812-3456-7890</span>
+                    </p>
+
+                    <p>
+                        Lokasi:
+                        <span>Purbalingga, Jawa Tengah</span>
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Alex Pratama.
+            Dibuat untuk Latihan Praktikum CSS.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
+
