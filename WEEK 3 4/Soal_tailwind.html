@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Toko Kampus</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+
+<!-- =========================
+     NAVBAR CLEAN
+========================== -->
+
+<header id="beranda" class="sticky top-0 z-50 bg-white border-b border-slate-200">
+
+<nav class="max-w-6xl mx-auto px-5 lg:px-8">
+
+    <div class="h-16 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="#beranda"
+           class="flex items-center gap-3 shrink-0">
+
+            <div class="w-9 h-9 rounded-lg bg-blue-600
+                        flex items-center justify-center">
+                <span class="text-white font-bold text-sm">
+                    TK
+                </span>
+            </div>
+
+            <div class="leading-tight">
+                <h1 class="text-base font-bold text-slate-900">
+                    Toko Kampus
+                </h1>
+
+                <p class="text-[11px] text-slate-500">
+                    Kebutuhan mahasiswa
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- MENU -->
+        <div class="hidden md:flex items-center gap-8">
+
+            <a href="#beranda"
+               class="text-sm font-medium text-slate-700
+                      hover:text-blue-600 transition">
+                Beranda
+            </a>
+
+            <a href="#produk"
+               class="text-sm font-medium text-slate-700
+                      hover:text-blue-600 transition">
+                Produk
+            </a>
+
+            <a href="#kontak"
+               class="text-sm font-medium text-slate-700
+                      hover:text-blue-600 transition">
+                Kontak
+            </a>
+
+        </div>
+
+
+        <!-- BUTTON -->
+        <a href="#produk"
+           class="hidden sm:flex items-center justify-center
+                  px-4 py-2 rounded-lg
+                  bg-blue-600 text-white
+                  text-sm font-semibold
+                  hover:bg-blue-700
+                  transition">
+            Lihat Produk
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+        <button
+            class="md:hidden w-10 h-10 rounded-lg
+                   border border-slate-200
+                   flex items-center justify-center
+                   text-slate-700
+                   hover:bg-slate-50">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke-width="2"
+                 stroke="currentColor"
+                 class="w-5 h-5">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+            </svg>
+
+        </button>
+
+    </div>
+
+</nav>
+
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+<section id="beranda"
+         class="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800">
+
+    <!-- Background decoration -->
+    <div class="absolute -top-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-20 w-80 h-80 bg-indigo-400/20 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+
+        <div class="max-w-3xl">
+
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-blue-100 text-sm font-medium mb-6">
+                🎓 Perlengkapan untuk mahasiswa
+            </span>
+
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Semua kebutuhan kuliah,
+                <span class="text-blue-200">
+                    ada di sini.
+                </span>
+            </h2>
+
+            <p class="mt-6 text-lg text-blue-100 max-w-2xl leading-relaxed">
+                Temukan berbagai perlengkapan kuliah berkualitas
+                dengan harga terjangkau untuk menunjang aktivitas
+                sehari-hari kamu di kampus.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+                <a href="#produk"
+                   class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-white text-blue-700 font-bold hover:bg-blue-50 transition shadow-lg">
+                    Lihat Produk
+                </a>
+
+                <a href="#kontak"
+                   class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-white/30 text-white font-semibold hover:bg-white/10 transition">
+                    Hubungi Kami
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     KEUNGGULAN
+========================== -->
+<section class="bg-white border-b border-slate-200">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-2xl">
+                    💰
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">
+                        Harga Terjangkau
+                    </h3>
+
+                    <p class="text-sm text-slate-500">
+                        Cocok untuk mahasiswa
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
+                    ⭐
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">
+                        Produk Berkualitas
+                    </h3>
+
+                    <p class="text-sm text-slate-500">
+                        Pilihan terbaik untukmu
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-2xl">
+                    🚀
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-900">
+                        Praktis & Mudah
+                    </h3>
+
+                    <p class="text-sm text-slate-500">
+                        Belanja kebutuhan kampus
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     PRODUK
+========================== -->
+<main id="produk" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Section heading -->
+    <div class="text-center max-w-2xl mx-auto mb-12">
+
+        <span class="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+            Koleksi Kami
+        </span>
+
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Produk Pilihan
+        </h2>
+
+        <p class="mt-4 text-slate-500">
+            Perlengkapan sederhana yang siap menemani
+            aktivitas kuliah kamu setiap hari.
+        </p>
+
+    </div>
+
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+        <!-- PRODUK 1 -->
+        <article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+            <div class="relative bg-slate-100 overflow-hidden">
+
+                <img
+                    src="assets/bukucatatan.jpg"
+                    alt="Buku Catatan"
+                    class="w-full aspect-square object-cover group-hover:scale-105 transition duration-500"
+                >
+
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold">
+                    Populer
+                </span>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-lg font-bold text-slate-900">
+                    Buku Catatan
+                </h3>
+
+                <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                    Buku untuk mencatat materi kuliah.
+                </p>
+
+                <div class="flex items-center justify-between mt-5">
+
+                    <p class="text-lg font-extrabold text-blue-600">
+                        Rp15.000
+                    </p>
+
+                    <a href="#detail-buku"
+                       class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUK 2 -->
+        <article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+            <div class="relative bg-slate-100 overflow-hidden">
+
+                <img
+                    src="assets/pulpen.jpg"
+                    alt="Pulpen"
+                    class="w-full aspect-square object-cover group-hover:scale-105 transition duration-500"
+                >
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-lg font-bold text-slate-900">
+                    Pulpen
+                </h3>
+
+                <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                    Pulpen untuk menulis tugas dan catatan.
+                </p>
+
+                <div class="flex items-center justify-between mt-5">
+
+                    <p class="text-lg font-extrabold text-blue-600">
+                        Rp5.000
+                    </p>
+
+                    <a href="#detail-pulpen"
+                       class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUK 3 -->
+        <article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+            <div class="relative bg-slate-100 overflow-hidden">
+
+                <img
+                    src="assets/tumblr.jpg"
+                    alt="Tumbler"
+                    class="w-full aspect-square object-cover group-hover:scale-105 transition duration-500"
+                >
+
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-green-500 text-white text-xs font-bold">
+                    Favorit
+                </span>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-lg font-bold text-slate-900">
+                    Tumbler
+                </h3>
+
+                <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                    Botol minum untuk dibawa ke kampus.
+                </p>
+
+                <div class="flex items-center justify-between mt-5">
+
+                    <p class="text-lg font-extrabold text-blue-600">
+                        Rp35.000
+                    </p>
+
+                    <a href="#detail-tumbler"
+                       class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUK 4 -->
+        <article class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+            <div class="relative bg-slate-100 overflow-hidden">
+
+                <img
+                    src="assets/tas kuliah.jpg"
+                    alt="Tas Kuliah"
+                    class="w-full aspect-square object-cover group-hover:scale-105 transition duration-500"
+                >
+
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-orange-500 text-white text-xs font-bold">
+                    Best Seller
+                </span>
+
+            </div>
+
+            <div class="p-5">
+
+                <h3 class="text-lg font-bold text-slate-900">
+                    Tas Kuliah
+                </h3>
+
+                <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                    Tas untuk menyimpan buku dan alat tulis.
+                </p>
+
+                <div class="flex items-center justify-between mt-5">
+
+                    <p class="text-lg font-extrabold text-blue-600">
+                        Rp120.000
+                    </p>
+
+                    <a href="#detail-tas"
+                       class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- =========================
+         DETAIL PRODUK
+    ========================== -->
+    <section class="mt-20">
+
+        <div class="text-center mb-10">
+
+            <span class="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+                Informasi
+            </span>
+
+            <h2 class="mt-2 text-3xl font-extrabold text-slate-900">
+                Detail Produk
+            </h2>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+
+            <!-- Detail Buku -->
+            <div id="detail-buku"
+                 class="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+
+                <div class="flex items-start gap-4">
+
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-blue-50 flex items-center justify-center text-xl">
+                        📓
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900">
+                            Buku Catatan
+                        </h3>
+
+                        <p class="text-slate-500 mt-2 leading-relaxed">
+                            Bahan kertas 80 gsm dengan sampul karton,
+                            ukuran A5.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Detail Pulpen -->
+            <div id="detail-pulpen"
+                 class="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+
+                <div class="flex items-start gap-4">
+
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-xl">
+                        🖊️
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900">
+                            Pulpen
+                        </h3>
+
+                        <p class="text-slate-500 mt-2 leading-relaxed">
+                            Tinta hitam dengan ujung 0,5 mm,
+                            nyaman digunakan untuk menulis tugas dan catatan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Detail Tumbler -->
+            <div id="detail-tumbler"
+                 class="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+
+                <div class="flex items-start gap-4">
+
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-green-50 flex items-center justify-center text-xl">
+                        🥤
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900">
+                            Tumbler
+                        </h3>
+
+                        <p class="text-slate-500 mt-2 leading-relaxed">
+                            Terbuat dari stainless steel dengan
+                            kapasitas 500 ml dan cocok dibawa ke kampus.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Detail Tas -->
+            <div id="detail-tas"
+                 class="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+
+                <div class="flex items-start gap-4">
+
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-orange-50 flex items-center justify-center text-xl">
+                        🎒
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900">
+                            Tas Kuliah
+                        </h3>
+
+                        <p class="text-slate-500 mt-2 leading-relaxed">
+                            Terbuat dari bahan kanvas dengan ruang utama
+                            yang luas dan kompartemen alat tulis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER / KONTAK
+========================== -->
+<footer id="kontak" class="bg-slate-950 text-white">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Brand -->
+            <div>
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center">
+                        <span class="font-bold">
+                            TK
+                        </span>
+                    </div>
+
+                    <h2 class="text-xl font-bold">
+                        Toko Kampus
+                    </h2>
+
+                </div>
+
+                <p class="text-slate-400 mt-4 max-w-md leading-relaxed">
+                    Menyediakan berbagai perlengkapan kuliah
+                    untuk membantu mahasiswa menjalani aktivitas
+                    kampus dengan lebih nyaman.
+                </p>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="font-bold text-lg">
+                    Hubungi Kami
+                </h3>
+
+                <div class="mt-4 space-y-3">
+
+                    <a href="mailto:toko@example.com"
+                       class="flex items-center gap-3 text-slate-400 hover:text-white transition">
+                        <span>✉️</span>
+                        toko@example.com
+                    </a>
+
+                    <p class="flex items-center gap-3 text-slate-400">
+                        <span>📍</span>
+                        Kampus & Sekitarnya
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-slate-800 mt-10 pt-6 text-center">
+
+            <p class="text-sm text-slate-500">
+                © 2026 Toko Kampus. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>
